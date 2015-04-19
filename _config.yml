@@ -9,9 +9,9 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Tianwei Zhang
-tagline:             'story telling with data'
-description:         'A place to document data visualization scripts'
+title:               Tianwei
+tagline:             '|Zhang'
+description:         'story telling with data'
 url:                 http://tianwei-zhang.github.io
 baseurl:             http://tianwei-zhang.github.io/
 paginate:            5
