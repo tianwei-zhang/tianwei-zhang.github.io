@@ -10,8 +10,8 @@ relative_permalinks: true
 
 # Setup
 title:               Tianwei Zhang
-tagline:             'My Website'
-description:         ''
+tagline:             'Story Teller with Data'
+description:         'A place to document data visualization scripts'
 url:                 http://tianwei-zhang.github.io
 baseurl:             http://tianwei-zhang.github.io/
 paginate:            5
