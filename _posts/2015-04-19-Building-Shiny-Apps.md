@@ -8,7 +8,9 @@ title: Building R Shiny Applications
 ##Getting Started
 First, we need to install the shiny package.
 <pre><code>install.packages('shiny')</code></pre>
-For every shiny app, there are two core components: **ui.R** and **server.R**. ui.R defines how the application will look. server.R defines the underlying calculations.  
+For every shiny app, there are two core components: **ui.R** and **server.R**. Roughly speaking, ui.R collects inputs and defines the look and feel of the app, and server.R determines outputs and performs all the backend calculations. In this tutorial, we will 
+
+  
 
 
  
