@@ -59,7 +59,7 @@
 .highlight .vg { color: #033 } /* Name.Variable.Global */
 .highlight .vi { color: #033 } /* Name.Variable.Instance */
 .highlight .il { color: #f60 } /* Literal.Number.Integer.Long */
-pre { white-space: pre; overflow: auto;}
+pre { white-space: pre; overflow: scroll; width:inherit;}
 .css .o,
 .css .o + .nt,
 .css .nt + .nt { color: #999; }
