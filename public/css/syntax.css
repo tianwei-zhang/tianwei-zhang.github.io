@@ -59,9 +59,7 @@
 .highlight .vg { color: #033 } /* Name.Variable.Global */
 .highlight .vi { color: #033 } /* Name.Variable.Instance */
 .highlight .il { color: #f60 } /* Literal.Number.Integer.Long */
-.highlight pre {
-  overflow-x: auto;       // this sets the scrolling in x
-}
+pre { white-space: pre; overflow: auto;}
 .css .o,
 .css .o + .nt,
 .css .nt + .nt { color: #999; }
