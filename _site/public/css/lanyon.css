@@ -37,7 +37,7 @@
 /* Prevent scroll on narrow devices */
 html,
 body {
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 html {
@@ -552,15 +552,4 @@ a.pagination-item:hover {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
 }
 
-table.highlighttable {
-  overflow-x:auto;
-  display:block;
-}
 
-table.highlighttable td.code {
-  width:100%;
-}
-
-pre code {
-  white-space: pre;
-}
