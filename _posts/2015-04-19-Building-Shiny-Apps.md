@@ -69,13 +69,7 @@ shinyUI(
 In order to do so, we add `selectInput` to the `sidebarPanel`. The first string (e.g. 'selected_vendor') is the variable name for that user input. For example, if user selects 'Vendor 1', `input$selected_vendor` will equal to 'Vendor 1'. The second string (e.g. 'Vendor: ') will be printed before the dropdown menu. The last component lists the available options for users to choose. 
 ![Demo App Screenshot3](/assets/shiny3.png)
  
- Here's an example:
 
-```
-function test() {
-  console.log("notice the blank line before this function?");
-}
-```
 
 
  
