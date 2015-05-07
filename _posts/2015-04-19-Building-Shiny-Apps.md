@@ -152,7 +152,7 @@ data=read.csv('masked_sales_opportunity_0501.csv',header=TRUE)
 shinyServer(function(input, output) {
     
     subdata=data[which(data$VENDOR_NAME==input$selected_vendor &
-                         data$CUSTOMER_NAME==input$selected_customer),]
+                       data$CUSTOMER_NAME==input$selected_customer),]
 
   output$plot=renderPlot({
   
@@ -168,3 +168,4 @@ it will output an error
  
 ![Demo App Screenshot6](/assets/shiny6.tiff) 
 ![Demo App Screenshot7](/assets/shiny7.tiff) 
+
