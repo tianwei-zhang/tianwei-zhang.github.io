@@ -49,7 +49,7 @@ If we run the code above, our app looks like this:
 ![Demo App Screenshot2](/assets/shiny2.tiff)
 
 #Sidebar/Input
-Next, let's add user input options to the sidebar. We want to use two dropdown meuns to allow users to select a vendor and a customer. 
+Next, let's add user input options to the sidebar. We want to use two dropdown meuns to allow users to select a vendor and a customer. In order to do so, we add `selectInput` to the `sidebarPanel`. The first string (e.g. 'selected\_vendor') is the variable name for that user input. For example, if user selects 'Vendor 1', `input$selected_vendor` will equal to 'Vendor 1'. The second string (e.g. 'Vendor: ') will be printed before the dropdown menu. The last component lists the available options for users to choose. 
 
 ```
 #ui.R
@@ -58,15 +58,14 @@ shinyUI(
   pageWithSidebar(
     headerPanel('Hello World'),
     sidebarPanel(
-      selectInput('selected\_vendor','Vendor: ',c('Vendor 1', 'Vendor 2')),
-      selectInput('selected\_customer','Customer: ',c('Customer 1', 'Customer 2'))
+      selectInput('selected_vendor','Vendor: ',c('Vendor 1', 'Vendor 2')),
+      selectInput('selected_customer','Customer: ',c('Customer 1', 'Customer 2'))
       ),
     mainPanel()
     )
   )
 ```
- 
-In order to do so, we add `selectInput` to the `sidebarPanel`. The first string (e.g. 'selected\_vendor') is the variable name for that user input. For example, if user selects 'Vendor 1', `input$selected_vendor` will equal to 'Vendor 1'. The second string (e.g. 'Vendor: ') will be printed before the dropdown menu. The last component lists the available options for users to choose. 
+
 ![Demo App Screenshot3](/assets/shiny3.png)
  
  We can add a slider bar using the following code:
