@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Building R Shiny Applications
+comments: True
 ---
 
 [R Shiny](http://shiny.rstudio.com) is a platform developed by RStudio that enables R users to develop **interative** web applications without knowing HTML or other programming languages. 
