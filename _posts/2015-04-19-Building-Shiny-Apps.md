@@ -107,8 +107,64 @@ You can use any ploting packages such as [ggplot2](http://ggplot2.org) or [rChar
  
 ![Demo App Screenshot5](/assets/shiny5.tiff) 
 
-To make our app more exciting and useful, let's make our output reactive to the user input.
+To make our app more exciting and useful, let's make our output reactive to the user input. We can refer to any existing (e.g. csv, Excel) files in our shiny app. I added a csv file named masked\_sales\_opportunity\_0501.csv in the same directory as ui.R and server.R. The first few lines are displayed below. 
 
+| CUSTOMER_NAME | VENDOR_NAME | MASTER_PRODCAT     | NETAMT | 
+|---------------|-------------|--------------------|--------| 
+| Customer 1    | Vendor 1    | Product Category 1 | 4437   | 
+| Customer 10   | Vendor 1    | Product Category 1 | 14794  | 
+| Customer 11   | Vendor 1    | Product Category 1 | 4575   | 
+| Customer 13   | Vendor 1    | Product Category 1 | 93     | 
+| Customer 14   | Vendor 1    | Product Category 1 | 2921   | 
+| Customer 15   | Vendor 1    | Product Category 1 | 4742   | 
+| Customer 17   | Vendor 1    | Product Category 1 | 7406   | 
 
+It has 20 unique customers and 10 unique vendors. Now we want to select a subset of the data and plot a histogram of NETAMT. 
 
+```
+library(shiny)
+library(ggplot2)
+
+data=read.csv('masked_sales_opportunity_0501.csv',header=TRUE)
+shinyServer(function(input, output) {
+  
+  selectData=reactive({
+    subdata=data[which(data$VENDOR_NAME==input$selected_vendor &
+                         data$CUSTOMER_NAME==input$selected_customer),]
+    return(subdata)
+  })    
+  
+  output$plot=renderPlot({
+   data=selectData()
+   hist(data$NETAMT)
+  })
+
+})
+```
+Notice that `selectData` is a function using the `reactive({})` wrap. **Reactivity** is a key concept in R Shiny. It means that the returned object will react to user inputs. If I invoke input variables without wrapping it in an reactive environment like in the following code,
+
+```
+#Incorrect code
+library(shiny)
+library(ggplot2)
+
+data=read.csv('masked_sales_opportunity_0501.csv',header=TRUE)
+shinyServer(function(input, output) {
+    
+    subdata=data[which(data$VENDOR_NAME==input$selected_vendor &
+                         data$CUSTOMER_NAME==input$selected_customer),]
+
+  output$plot=renderPlot({
+  
+    })
+
+})
+```
+it will output an error 
+>Error in .getReactiveEnvironment()$currentContext() : 
+  Operation not allowed without an active reactive context. (You tried to do something that can only be done from inside a reactive expression or observer.)
  
+ With the the correct code, this is what we have:
+ 
+![Demo App Screenshot6](/assets/shiny6.tiff) 
+![Demo App Screenshot7](/assets/shiny7.tiff) 
