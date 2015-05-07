@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Building R Shiny Applications
+published: true
 ---
 
 [R Shiny](http://shiny.rstudio.com) is a platform developed by RStudio that enables R users to develop **interative** web applications without knowing HTML or other programming languages. 
@@ -74,10 +75,6 @@ In order to do so, we add `selectInput` to the `sidebarPanel`. The first string 
  ```
  sliderInput('a_number','Select a Number: ',min=1,max=100,value=50)
  ```
- ![Demo App Screenshot4](/assets/shiny4.tiff)
- 
- 
 
-
-
+![Demo App Screenshot4](/assets/shiny4.tiff)
  
