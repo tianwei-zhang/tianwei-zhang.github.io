@@ -11,7 +11,7 @@ First, we need to install the shiny package.
 <pre><code>install.packages('shiny')</code></pre>
 For every shiny app, there are two core components: **ui.R** and **server.R**. Roughly speaking, ui.R collects inputs and defines the look and feel of the app, and server.R determines outputs and performs all the backend calculations. In this tutorial, we will learn how to build a simplified version of [this demo application](https://infordsl.shinyapps.io/demo/). 
 
-![Demo App Screenshot](/assets/shiny1.png)
+![Demo App Screenshot](/assets/shiny1.jpg)
 
 Let's construct our first Shiny app!
 ##Constructing UI
