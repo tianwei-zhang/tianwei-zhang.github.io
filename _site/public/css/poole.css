@@ -160,7 +160,7 @@ code {
   border-radius: 3px;
 }
 pre {
-  display: block;
+  /*display: block;*/
   margin-top: 0;
   margin-bottom: 1rem;
   padding: 1rem;
