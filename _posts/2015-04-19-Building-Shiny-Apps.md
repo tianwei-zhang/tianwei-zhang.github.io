@@ -66,8 +66,16 @@ shinyUI(
   )
 ```
  
-In order to do so, we add `selectInput` to the `sidebarPanel`. The first string (e.g. 'selected_vendor') is the variable name for that user input. For example, if user selects 'Vendor 1', `input$selected_vendor` will equal to 'Vendor 1'. The second string (e.g. 'Vendor: ') will be printed before the dropdown menu. The last component lists the available options for users to choose. 
+In order to do so, we add `selectInput` to the `sidebarPanel`. The first string (e.g. 'selected\_vendor') is the variable name for that user input. For example, if user selects 'Vendor 1', `input$selected_vendor` will equal to 'Vendor 1'. The second string (e.g. 'Vendor: ') will be printed before the dropdown menu. The last component lists the available options for users to choose. 
 ![Demo App Screenshot3](/assets/shiny3.png)
+ 
+ We can add a slider bar using the following code:
+ 
+ ```
+ sliderInput('a_number','Select a Number: ',min=1,max=100,value=50)
+ ```
+ ![Demo App Screenshot4](/assets/shiny4.tiff)
+ 
  
 
 
