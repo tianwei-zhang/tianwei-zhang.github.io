@@ -40,7 +40,7 @@ There are three hiercharchy levels found in the code above.
 
 * `shinyUI()` is always required.
 
-	*  `pageWithSidebar()` specifies the page template, in this case a page with a sidebar consisted with three panels.
+	*  `pageWithSidebar()` specifies the page template, in this case a page with a sidebar consisted of three panels.
 		*  The `headerPanel` prints a title.
 		*  The `sidebarPanel` constructs a sidebar on the left.
 		*  The `mainPanel` outputs a large panel on the right.
