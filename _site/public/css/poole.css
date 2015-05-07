@@ -169,8 +169,8 @@ pre {
   white-space: pre;
 /*  white-space: pre-wrap;*/
   overflow: auto;
-  word-break: break-all;
-  word-wrap: break-word;
+  /*word-break: break-all;
+  word-wrap: break-word;*/
   background-color: #f9f9f9;
 }
 pre code {
