@@ -130,7 +130,7 @@ shinyServer(function(input, output) {
   
   selectData=reactive({
     subdata=data[which(data$VENDOR_NAME==input$selected_vendor &
-                         data$CUSTOMER_NAME==input$selected_customer),]
+                       data$CUSTOMER_NAME==input$selected_customer),]
     return(subdata)
   })    
   
