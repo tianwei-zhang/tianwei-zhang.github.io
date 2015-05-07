@@ -168,4 +168,3 @@ it will output an error
  
 ![Demo App Screenshot6](/assets/shiny6.tiff) 
 ![Demo App Screenshot7](/assets/shiny7.tiff) 
-
