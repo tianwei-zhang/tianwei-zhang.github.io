@@ -4,7 +4,7 @@ title: Building R Shiny Applications
 comments: True
 ---
 
-[R Shiny](http://shiny.rstudio.com) is a platform developed by RStudio that enables R users to develop **interative** web applications without knowing HTML or other programming languages. 
+[R Shiny](http://shiny.rstudio.com) is a platform developed by RStudio that enables R users to develop **interactive** web applications without involving HTML or other programming languages. 
 
 ##Getting Started
 First, we need to install the shiny package.
@@ -37,20 +37,20 @@ shinyUI(
     )
   )
 ```
-There are three hiercharchy levels found in the code above. 
+There are three hierarchy levels found in the code above. 
 
 * `shinyUI()` is always required.
 
 	*  `pageWithSidebar()` specifies the page template, in this case a page with a sidebar consisted of three panels.
-		*  The `headerPanel` prints a title.
-		*  The `sidebarPanel` constructs a sidebar on the left.
-		*  The `mainPanel` outputs a large panel on the right.
+		* `headerPanel` prints a title.
+		* `sidebarPanel` constructs a sidebar on the left.
+		* `mainPanel` outputs a large panel on the right.
 
 If we run the code above, our app looks like this:
 ![Demo App Screenshot2](/assets/shiny2.tiff)
 
 #Sidebar/Input
-Next, let's add user input options to the sidebar. We want to use two dropdown meuns to allow users to select a vendor and a customer. In order to do so, we add `selectInput` to the `sidebarPanel`. The first string (e.g. 'selected\_vendor') is the variable name for that user input. For example, if user selects 'Vendor 1', `input$selected_vendor` will equal to 'Vendor 1'. The second string (e.g. 'Vendor: ') will be printed before the dropdown menu. The last component lists the available options for users to choose. 
+Next, let's add user input options to the sidebar. We want to use two dropdown menus to allow users to select a vendor and a customer. In order to do so, we add `selectInput` to the `sidebarPanel`. The first string (e.g. 'selected\_vendor') is the variable name for that user input. For example, if user selects 'Vendor 1', `input$selected_vendor` will equal to 'Vendor 1'. The second string (e.g. 'Vendor: ') will be printed before the dropdown menu. The last component lists the available options. 
 
 ```
 #ui.R
@@ -77,7 +77,7 @@ shinyUI(
  ![Demo App Screenshot4](/assets/shiny4.tiff)
  
 #Output
-Now let's talk about how to construct the output. In this case, let's start with putting a plot in the `mainPanel`. To do so, we add the following part to the ui.R. 
+Now let's talk about how to construct the output. In this case, let's start with a plot in the `mainPanel`. To do so, we add the following part to ui.R. 
 
 ```
 mainPanel(
@@ -85,7 +85,7 @@ mainPanel(
 )
 ```
 
-Since we want to output a plot, we use `plotOutput`. There are different types of outputs avaiable for R Shiny. For example, you can print a table with `tableOutput` or a html file with `htmlOutput`. The string 'plot1' is the name for this output that we will refer to later. 
+Since we want to output a plot, we use `plotOutput`. There are different types of outputs available for R Shiny. For example, you can print a table with `tableOutput` or a html file with `htmlOutput`. The string 'plot1' is the name for this output that we will refer to later. 
 
 In order to generate the output, let's switch to server.R. 
 
@@ -103,11 +103,11 @@ shinyServer(function(input, output) {
 })
 ```
 
-You can use any ploting packages such as [ggplot2](http://ggplot2.org) or [rCharts](http://rcharts.io), just load the packages at the beginning of the code. As you can see, there are two "input variables" for `shinyServer`, **input** and **output**. We can access the user inputs (e.g. vendor and customer) via input$variable\_name. In this tutorial, we can call the user selected vendor and customer via `input$selected_vendor` and `input$selected_customer` (recall that selected\_vendor and selected\_customer are the names we gave to dropdown menus). **Output** is the collective list where all outputs are stored. `output$plot1=renderPlot({})` tells the program that plot1 is a graph and it is going to be rendered according to the R code within the brackets.    
+You can use any graphing packages such as [ggplot2](http://ggplot2.org) or [rCharts](http://rcharts.io), just load the packages at the beginning of the code. As you can see, there are two "input variables" for `shinyServer`, **input** and **output**. We can access the user inputs (e.g. vendor and customer) via input$variable\_name. In this tutorial, we can call the user selected vendor and customer via `input$selected_vendor` and `input$selected_customer` (recall that selected\_vendor and selected\_customer are the names we gave to dropdown menus). **Output** is the collective list where all outputs are stored. `output$plot1=renderPlot({})` tells the program that plot1 is a graph and it is going to be rendered according to the R code within the brackets.    
  
 ![Demo App Screenshot5](/assets/shiny5.tiff) 
 
-To make our app more exciting and useful, let's make our output reactive to the user input. We can refer to any existing (e.g. csv, Excel) files in our shiny app. I added a csv file named masked\_sales\_opportunity\_0501.csv in the same directory as ui.R and server.R. The first few lines are displayed below. 
+To make our app more exciting and useful, let's make our output reactive to the user input. We can refer to any existing files (e.g. csv, Excel) in our shiny app. I added a csv file named masked\_sales\_opportunity\_0501.csv in the same directory as ui.R and server.R. The first few lines are displayed below. 
 
 | CUSTOMER_NAME | VENDOR_NAME | MASTER_PRODCAT     | NETAMT | 
 |---------------|-------------|--------------------|--------| 
@@ -141,7 +141,7 @@ shinyServer(function(input, output) {
 
 })
 ```
-Notice that `selectData` is a function using the `reactive({})` wrap. **Reactivity** is a key concept in R Shiny. It means that the returned object will react to user inputs. If I invoke input variables without wrapping it in an reactive environment like in the following code,
+Notice that `selectData` is a function using the `reactive({})` wrap. **Reactivity** is a key concept in R Shiny. It means that the returned object will react to user inputs. If I invoke input variables without wrapping it in a reactive environment like in the following code,
 
 ```
 #Incorrect code
@@ -160,11 +160,11 @@ shinyServer(function(input, output) {
 
 })
 ```
-it will output an error 
+it will output an error.
 >Error in .getReactiveEnvironment()$currentContext() : 
   Operation not allowed without an active reactive context. (You tried to do something that can only be done from inside a reactive expression or observer.)
  
- With the the correct code, this is what we have:
+ With the correct code, this is what we have:
  
 ![Demo App Screenshot6](/assets/shiny6.tiff) 
 ![Demo App Screenshot7](/assets/shiny7.tiff) 
