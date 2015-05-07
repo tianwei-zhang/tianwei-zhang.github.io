@@ -76,7 +76,7 @@ shinyUI(
  ![Demo App Screenshot4](/assets/shiny4.tiff)
  
 #Output
-Now let's talk about how to construct output. In this case, let's start with putting a plot in the `mainPanel`. To do so, we add the following part to the ui.R. 
+Now let's talk about how to construct the output. In this case, let's start with putting a plot in the `mainPanel`. To do so, we add the following part to the ui.R. 
 
 ```
 mainPanel(
@@ -84,14 +84,15 @@ mainPanel(
 )
 ```
 
-Since we want to output a plot, we use `plotOutput`. There are different types of outputs avaiable for R Shiny. For example, you can print a table with `tableOutput` or a html file with `htmlOutput`. The string 'plot1' is the name for this plot that we will refer to later. 
+Since we want to output a plot, we use `plotOutput`. There are different types of outputs avaiable for R Shiny. For example, you can print a table with `tableOutput` or a html file with `htmlOutput`. The string 'plot1' is the name for this output that we will refer to later. 
 
-In order to generate a plot for plot1, let's switch to server.R. 
+In order to generate the output, let's switch to server.R. 
 
 ```
 #server.R
 library(shiny)
 library(ggplot2)
+
 shinyServer(function(input, output) {
 
   output$plot1=renderPlot({
@@ -101,7 +102,7 @@ shinyServer(function(input, output) {
 })
 ```
 
-You can use any ploting packages such as [ggplot2](http://ggplot2.org) or [rCharts](http://rcharts.io), just load the packages at the beginning of the code. As you can see, There are two "input variables" for `shinyServer`, **input** and **output**. We can access the user inputs (e.g. vendor and customer) via input$variable\_name. In this tutorial, we can call the user selected vendor and customer via `input$selected\_vendor` and `input$selected\_customer` (recall that selected\_vendor and selected\_customer are the names we gave to dropdown menus). **Output** is the collective list where all outputs should be stored. `output$plot1=renderPlot({})` tells the program that plot1 is a graph and it is going to be rendered according to the R code within the brackets.    
+You can use any ploting packages such as [ggplot2](http://ggplot2.org) or [rCharts](http://rcharts.io), just load the packages at the beginning of the code. As you can see, there are two "input variables" for `shinyServer`, **input** and **output**. We can access the user inputs (e.g. vendor and customer) via input$variable\_name. In this tutorial, we can call the user selected vendor and customer via `input$selected_vendor` and `input$selected_customer` (recall that selected\_vendor and selected\_customer are the names we gave to dropdown menus). **Output** is the collective list where all outputs are stored. `output$plot1=renderPlot({})` tells the program that plot1 is a graph and it is going to be rendered according to the R code within the brackets.    
  
 ![Demo App Screenshot5](/assets/shiny5.tiff) 
 
