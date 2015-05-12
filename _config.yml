@@ -13,11 +13,12 @@ relative_permalinks: true
 
 # Setup
 title:               Tianwei
-tagline:             '| Zhang'
+tagline:             '|Zhang'
 description:         'story telling with data'
 url:                 http://tianwei-zhang.github.io
 baseurl:             http://tianwei-zhang.github.io/
 paginate:            5
+excerpt_separator: <!--more-->
 
 # About/contact
 author:
