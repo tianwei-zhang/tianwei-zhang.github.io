@@ -35,10 +35,10 @@ comments: True
 
 1. Go to App Store or Google Play Store
 2. Download and install DS File
- ![](/assets/nas11.png)
-3. Open the application, and put infordsl as the quick connect ID ![](/assets/nas12.png)
+ ![](/assets/nas11.PNG)
+3. Open the application, and put infordsl as the quick connect ID ![](/assets/nas12.PNG)
 4. Log in with your username and password
-![](/assets/nas13.png)
+![](/assets/nas13.PNG)
 
 *****
 **Time Machine Backup to Synology Server**
