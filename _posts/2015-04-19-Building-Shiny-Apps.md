@@ -15,7 +15,9 @@ For every shiny app, there are two core components: **ui.R** and **server.R**. R
 ![Demo App Screenshot](/assets/shiny1.jpg)
 
 Let's construct our first Shiny app!
+
 <!--more-->
+
 ##Constructing UI
 For simple applications, ui.R and server.R are almost completely separate pieces. One can start building the UI component without worrying about the backend calculation. For now, let's only add the following lines to server.R
 
