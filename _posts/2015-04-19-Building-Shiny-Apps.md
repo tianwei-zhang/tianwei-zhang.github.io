@@ -2,6 +2,7 @@
 layout: post
 title: Building R Shiny Applications
 comments: True
+excerpt_separator: <!--more-->
 ---
 
 [R Shiny](http://shiny.rstudio.com) is a platform developed by RStudio that enables R users to develop **interactive** web applications without involving HTML or other programming languages. 
@@ -14,6 +15,7 @@ For every shiny app, there are two core components: **ui.R** and **server.R**. R
 ![Demo App Screenshot](/assets/shiny1.jpg)
 
 Let's construct our first Shiny app!
+<!--more-->
 ##Constructing UI
 For simple applications, ui.R and server.R are almost completely separate pieces. One can start building the UI component without worrying about the backend calculation. For now, let's only add the following lines to server.R
 
