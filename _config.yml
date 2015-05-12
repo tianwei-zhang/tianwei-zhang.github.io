@@ -12,7 +12,7 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Tianwei
+title:               'Tianwei'
 tagline:             '|Zhang'
 description:         'story telling with data'
 url:                 http://tianwei-zhang.github.io
