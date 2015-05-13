@@ -11,7 +11,7 @@ excerpt_separator: <!--more-->
 2. Log in with your username and password
 3. On the top right-hand corner, click the “head” icon to access options ![](/assets/nas1.png)
  
- <!--more-->
+<!--more-->
  
 4. Click on Options, and change your password ![](/assets/nas2.png)
 
