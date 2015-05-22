@@ -170,6 +170,6 @@ it will output an error.
  
  With the correct code, this is what we have:
  
-![Demo App Screenshot6](/assets/shiny6.tiff) 
-![Demo App Screenshot7](/assets/shiny7.tiff) 
+![Demo App Screenshot6](/assets/shiny6.jpeg) 
+![Demo App Screenshot7](/assets/shiny7.jpeg) 
 
