@@ -8,10 +8,12 @@ excerpt_separator: <!--more-->
 
 In my [previous post](http://tianwei-zhang.github.io/2015/04/19/Building-Shiny-Apps/), I gave a tutorial on building a very simple R Shiny app. Today, we are going to talk about some advanced topics. 
 
-<!--more-->
-
 # Changing the Theme
-Although you can change the layout of your Shiny app, most of the apps will have the same look and feel with the default theme. You can quickly make your app look unique by adding a bootstrap CSS file. According to Wikipedia, 
+Although you can change the layout of your Shiny app, most of the apps will have the same look and feel with the default theme. You can quickly make your app look unique by adding a bootstrap CSS file. 
+
+<!--more--> 
+
+According to Wikipedia, 
 
 >Bootstrap is a free and open-source collection of tools for creating websites and web applications. It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions. The bootstrap framework aims to ease web development.
 
