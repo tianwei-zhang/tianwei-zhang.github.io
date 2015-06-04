@@ -52,7 +52,35 @@ nav{
 
 Logo.png is stored in the www folder and it will appear in the top-left corner of the app. 
 
-# selectizeInput v.s. selectInput
+## Progress Bar
+If your computation takes a long time to finish, Shiny provides this nice feature to display a progress bar. I use the simpler version with `withProgress` like this:
 
-to be continued...
+```
+output$plot.ui=renderUI({
+	withProgress(message='Generating plot...',
+					plotOutput('plot')
+					)
+})
+```
 
+![Progress Bar](/assets/progress.png)
+
+It is a nice feature, but the pale blue background and the font do not always go well with your selected theme. It took me a while to find out, but here is how you can change it. 
+
+In your bootstrap.css file, you can add the following lines:
+
+```
+.shiny-progress .progress-text {
+  position: absolute;
+  right: 10px;
+  height: 30px;
+  width: 170px;
+  background-color: #ffffff;
+  margin: 0px;
+  padding: 2px 3px;
+  opacity: 0.85;
+  font-size: 18px;
+}
+```
+
+With this, you can change the background color, font size, and even the opacity of your progress message box. 
