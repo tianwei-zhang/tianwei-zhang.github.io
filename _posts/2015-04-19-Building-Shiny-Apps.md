@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Building R Shiny Applications
+tags: R Shiny
 comments: True
 excerpt_separator: <!--more-->
 ---
