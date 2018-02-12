@@ -1,10 +1,16 @@
 ---
+title: "Advanced R Shiny Topics"
 layout: post
-title: Advanced R Shiny Topics
-tags: R Shiny
+date: 2015-06-01
+image: /assets/images/markdown.jpg
+headerImage: false
+tags:
+- R Shiny
+category: blog
 comments: True
 excerpt_separator: <!--more-->
 ---
+
 
 In my [previous post](http://tianwei-zhang.github.io/2015/04/19/Building-Shiny-Apps/), I gave a tutorial on building a very simple R Shiny app. Today, we are going to talk about some advanced topics. 
 
