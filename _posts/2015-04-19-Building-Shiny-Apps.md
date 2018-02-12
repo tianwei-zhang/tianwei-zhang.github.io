@@ -1,7 +1,12 @@
 ---
+title: "Building R Shiny Applications"
 layout: post
-title: Building R Shiny Applications
-tags: R Shiny
+date: 2015-04-19
+image: /assets/images/markdown.jpg
+headerImage: false
+tags: 
+- R Shiny
+category: blog
 comments: True
 excerpt_separator: <!--more-->
 ---
