@@ -34,15 +34,15 @@ disqus:
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: https://www.facebook.com/zhang.tianwei
+facebook: zhang.tianwei
 # twitter: mytwitter
-google: https://plus.google.com/u/1/+TianweiZhang
+google: TianweiZhang
 # instagram: myinstagram
 # pinterest: mypinterest
-linkedin: https://www.linkedin.com/in/tianweizhang/
+linkedin: tianweizhang/
 # youtube: myyoutube
 # spotify: myspotify
-github: https://github.com/tianwei-zhang
+github: tianwei-zhang
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
