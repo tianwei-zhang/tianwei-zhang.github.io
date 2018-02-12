@@ -30,19 +30,19 @@ permalink: /:title/
 
 # if you don't want comments in your posts, leave categories empty
 disqus:
-  shortname: mydisqus # enter this from your disqus account
+  shortname: tianwei-z # enter this from your disqus account
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: myfacebook
-twitter: mytwitter
-# google: mygoogle
+facebook: https://www.facebook.com/zhang.tianwei
+# twitter: mytwitter
+google: https://plus.google.com/u/1/+TianweiZhang
 # instagram: myinstagram
 # pinterest: mypinterest
-# linkedin: mylinkedin
+linkedin: https://www.linkedin.com/in/tianweizhang/
 # youtube: myyoutube
 # spotify: myspotify
-github: mygithub
+github: https://github.com/tianwei-zhang
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
@@ -50,7 +50,7 @@ github: mygithub
 #medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: myemail@gmail.com
+email: kevinzhang122@gmail.com
 
 
 
