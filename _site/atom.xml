@@ -4,7 +4,7 @@
  <title>Tianwei Zhang | A data scientist</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <id>http://localhost:4000</id>
- <updated>2018-02-14T13:21:13-05:00</updated>
+ <updated>2018-02-14T13:41:33-05:00</updated>
  <author>
    <name>Tianwei Zhang</name>
    <uri></uri>
@@ -18,7 +18,7 @@
    <link href="http://localhost:4000/Advanced-R-Shiny-Topics"/>
    <id>http://localhost:4000/Advanced-R-Shiny-Topics</id>
    <updated>2015-06-01T00:00:00-04:00</updated>
-   <content type="html">&lt;p&gt;In my &lt;a href=&quot;http://tianwei-zhang.github.io/2015/04/19/Building-Shiny-Apps/&quot;&gt;previous post&lt;/a&gt;, I gave a tutorial on building a very simple R Shiny app. Today, we are going to talk about some advanced topics.&lt;/p&gt; &lt;h1 id=&quot;changing-the-theme&quot;&gt;Changing the Theme&lt;/h1&gt; &lt;p&gt;Although you can change the layout of your Shiny app, most of the apps will have the same look...</content>
+   <content type="html">&lt;p&gt;In my &lt;a href=&quot;http://tianwei-zhang.github.io/Building-Shiny-Apps&quot;&gt;previous post&lt;/a&gt;, I gave a tutorial on building a very simple R Shiny app. Today, we are going to talk about some advanced topics.&lt;/p&gt; &lt;h1 id=&quot;changing-the-theme&quot;&gt;Changing the Theme&lt;/h1&gt; &lt;p&gt;Although you can change the layout of your Shiny app, most of the apps will have the same look...</content>
  </entry>
 
  
