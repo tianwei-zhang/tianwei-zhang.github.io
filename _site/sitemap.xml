@@ -16,10 +16,10 @@
 <loc>http://localhost:4000/404</loc>
 </url>
 <url>
-<loc>http://localhost:4000/Apps</loc>
+<loc>http://localhost:4000/About</loc>
 </url>
 <url>
-<loc>http://localhost:4000/about</loc>
+<loc>http://localhost:4000/Apps</loc>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
