@@ -1,38 +1,54 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
 # Site settings
-title: Tianwei Zhang | A data scientist
-description: "A blog about data science and technology"
-url: "http://tianwei-zhang.github.io"
-author:
-  name: "Tianwei Zhang"
-  email: "kevinzhang122@gmail.com"
+title: Travelog
+author: Tianwei Zhang
+author_link: http://www.bayarea.photos
+author_description: It is better to travel ten thousand miles than to read ten thousand books
+email: kevinzhang122@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Travel the world, discover new places, and meet amazing friends.
+baseurl:
+url: "http://www.bayarea.photos" # the base hostname & protocol for your site
+
+
+# Picturefill
+# A responsive image polyfill: http://scottjehl.github.io/picturefill/
+picturefill: true
+
+# Typography
+# To use, publish a kit and enter the ID here. If you do not wish to use Typekit,
+# leave this ID blank
+typekit_kit_id: kwf5dox
 
 # Build settings
-baseurl:  # Change this to your relative path (ex: /blog/), or leave just a /
+plugins: [jekyll-paginate]
 markdown: kramdown
+
 source: .
 destination: ./_site
 permalink: /:title
-paginate: 8
-paginate_path: /page:num/
 
-# Default values
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+# Pagination
+paginate: 3
 
-# Plugins
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
+# Sass
+sass:
+    style: :compressed
 
-# Custom variables
-version: "1.0.0"
 
-# Options
-custom_header: false
-custom_nav_footer: false
-reverse: false
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - any_additional_item # any user-specific listing goes at the end

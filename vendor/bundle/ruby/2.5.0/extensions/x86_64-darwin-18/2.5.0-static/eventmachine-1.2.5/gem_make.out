@@ -1,0 +1,16 @@
+current directory: /Users/Tianwei/Documents/Github/travel/vendor/bundle/ruby/2.5.0/gems/eventmachine-1.2.5/ext/fastfilereader
+/Users/Tianwei/.rbenv/versions/2.5.3/bin/ruby -r ./siteconf20181206-70517-j06137.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Tianwei/Documents/Github/travel/vendor/bundle/ruby/2.5.0/gems/eventmachine-1.2.5/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /Users/Tianwei/Documents/Github/travel/vendor/bundle/ruby/2.5.0/gems/eventmachine-1.2.5/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+
+current directory: /Users/Tianwei/Documents/Github/travel/vendor/bundle/ruby/2.5.0/gems/eventmachine-1.2.5/ext/fastfilereader
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fastfilereaderext.bundle ./.gem.20181206-70517-1axhi27

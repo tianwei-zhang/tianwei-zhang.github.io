@@ -1,131 +1,44 @@
-## About
-Monochrome is a minimal, responsive, ready to use Jekyll theme for blogging. [Demo](https://dyutibarma.github.io/monochrome/)
-(Built on top of Emerald Jekyll theme)
+Galileo Theme
+---
 
-## Features
+Another damned theme for Jekyll.
 
-- Completely responsive and mobile first
-- Clean SEO friendly URLs, auto-generated from post title (no messy dates in the url)
-- SEO title/description integration
-- Sitemap ready
-- Pagination support
-- Mobile friendly navigation menu
-- Easy customization for header, footer, navigation links, colors, favicon etc
-- Default Monochrome Color Palette - black, white, greys
-- About page
-- 404 page
-- ..and a lot more
+![The Galileo Theme](https://cloud.githubusercontent.com/assets/185649/11737785/b998bd0c-a002-11e5-9c93-0ac83917f32d.png)
 
-## Install/Setup Jekyll
+Landing somewhere between a scholarly publication and an adventurers notebook, the Galileo theme presents your words & photographs in a handsome, agreeable manner.
 
-(Skip if you already have Jekyll 2.2)
+It is well behaved on both mobile & desktop and radically minimal in its footprint. Charged and ready for deployment to Github Pages.
 
-1. Make sure Ruby 2.2 is installed 
-```
-sudo apt-get install ruby2.2
-sudo apt-get install ruby2.2-dev
-```
-2. Install bundle: `sudo gem install bundler`
-3. Install jekyll: `sudo gem install jekyll`
+### In the wild
 
-### Resources
+Demo [here](http://travelog.io/galileo-theme/). I'm so damned fond of this theme that I also use it on [my own blog](http://travelog.io/).
 
-- We found the jekyll tutorials on youtube very quick and useful to get started
-- [Jekyll documentation](http://jekyllrb.com)   
+### Installation
 
+- Install Jekyll: `gem install jekyll`
+- [Fork this repository](https://github.com/rowanoulton/galileo-theme/fork)
+- Clone it: `git clone https://github.com/YOUR-USER/galileo-theme`
+- Run the jekyll server: `jekyll serve -w`
 
-## Install Monochrome dependencies
+Observe the results at <http://localhost:4000>.
 
-```
-sudo gem install jekyll-paginate
-sudo gem install jekyll-sitemap
+### Customisation
 
-```
+Make changes in [_config.yml](https://github.com/rowanoulton/galileo-theme/blob/master/_config.yml), ye damned heathens.
 
-## Get Started with Monochrome
+#### A note about fonts
 
-### Option 1 
+I've employed [Typekit](https://typekit.com/) to load both "[Adobe Caslon Pro](https://typekit.com/fonts/adobe-caslon-pro)" & "[LTC Bodoni 175](https://typekit.com/fonts/ltc-bodoni-175)". To make use of these with your own Typekit account, publish a kit and enter the ID into the Jekyll config.
 
-- Fork this repository
-- (Optional) Change the 'baseurl' value in the 'config.yml' file, from '/blog' to your preferred directory/project name (example '/xyz' or '/' to install in root)
-- Clone the forked repository to your local machine to make changes
-- Run 'jekyll serve' and open browser to 'localhost:4000/blog/' to see your changes
-- (Optional) Host with github pages
+This _is_ optional. If you don't want to use Typekit, well _fine_, just leave the Typekit Kit ID blank. You'll need to elect and specify substitute fonts [here](https://github.com/rowanoulton/galileo-theme/blob/master/css/screen.scss#L7) and [here](https://github.com/rowanoulton/galileo-theme/blob/master/css/screen.scss#L8).
 
-Note: If you fork the repository, your version of the repository will not be searchable. If you want searchability, we suggest you use the next option.
+### Deployment
+
+This theme is built to be deployed easily to [GitHub Pages](https://pages.github.com/).
 
 
-### Option 2
+### License
 
-- Simply download the .zip folder from the repository github page
-- Extract the contents from the .zip folder into your local folder
-- cd into monochrome/
-- Run 'jekyll serve' and open browser to 'localhost:4000/blog/' to see your changes
-- Create a repository in github and push the files
-- (Optional) Host with github pages
+[MIT](https://github.com/rowanoulton/galileo-theme/blob/master/LICENSE).
 
-## Write a Post
-
-- cd into  ``_posts/``
-- create new file with format yyyy-mm-dd-title-of-post.md
-- add title/description (refer any of the test posts)
-- add markdown and save
-
-
-## Customization Options
-
-You can customize this layout using instructions below. 
-
-### Header/Footer/Navigation
-
-Set a custom header tag by setting the related option in the ``_config.yml`` file to "true". Then insert your custom code into the ``header-custom.html`` file.
-In the same way, you can customize the footer of the navigation menu, by setting to "true" the related option and put your code into the ``nav-footer-custom.html`` file.
-Moreover select a reverse option that allows to move the navigation menu to the left side, by setting it to "true".
-
-### Colors
-
-The basic colors are set into the ``base.scss`` file:
-- $background-color: used for background and links in the navigation menu
-- $text-color: used for text and title in posts and pages 
-- $text-light-color: used for text lighter than text-color
-- $text-dark-color: used for text darker than text-color
-
-To customize the colors, just set the values in HEX, RGB (or RGBa) or any other format accepted by CSS.
-
-### Navigation menu
-
-The links inside the navigation menu are autogenerated from pages having the layout set to ``page``.
-You can set custom links, by putting in the ``<a>`` tag into the ``link.html`` file.
-
-### Branch
-There are two branches: 
-- ``master``: is for development.
-- ``gh-pages``: is only for demo site.  
-
-### Baseurl
-
-You can change the 'baseurl' value in the 'config.yml' file, from '/monochrome' to your preferred directory/project name (example '/xyz' or '/' to install in root)
-
-### Typography
-
-To maintain the vertical rhythm, it has been applied a **Typographic scale** as a modular scale, with a baseline set to 24px. To maintain this rhythm you need to insert elements like image, video or other contents with a 24px (or multiple) height as refer.
-
-## Resources
-
-- We found the jekyll tutorials on youtube very quick and useful to get started
-- [Jekyll documentation](http://jekyllrb.com)   
-
-## Todo
-
-- Google Analytics integration
-- Footer to stick to bottom even when content is less
-
-## Author
-
-### TheReviewIndex
-
-- Dyuti Barma
-- Web site: [Review Aggregation and Summary Site for India - TheReviewIndex.com](https://thereviewindex.com)
-
-## License
-Released under [MIT License](license.md).
+Do whatever you damn well please with it. I'm always glad to hear what folks are doing with it though — let me know on [Twitter](https://twitter.com/rowanoulton).
